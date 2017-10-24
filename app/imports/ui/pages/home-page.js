@@ -10,3 +10,7 @@ Template.Home_Page.helpers({
     return Contacts.find();
   },
 });
+
+Templete.Home_Page.onCreated(function onCreated() {
+    this.subscribe('Contacts');
+  });
